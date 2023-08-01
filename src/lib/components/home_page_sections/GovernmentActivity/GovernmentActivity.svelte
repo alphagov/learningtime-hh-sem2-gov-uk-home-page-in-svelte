@@ -4,11 +4,12 @@
 	import ChevronCardContainer from '../../shared/ChevronCardContainer.svelte';
 	import SectionHeading from '../../shared/SectionHeading.svelte';
 	import WidthContainer from '../../shared/WidthContainer.svelte';
+	import UnorderedListContainer from '$lib/components/shared/UnorderedListContainer.svelte';
 </script>
 
 <section id="government-activity-section">
 	<WidthContainer>
-		<div id="government-activity-container">
+		<UnorderedListContainer>
 			<div id="government-activity-two-thirds">
 				<div id="government-activity-header-container">
 					<SectionHeading title="Government Activity" />
@@ -31,20 +32,6 @@
 					<BigNumberContainer />
 				</div>
 			</div>
-		</div>
+		</UnorderedListContainer>
 	</WidthContainer>
 </section>
-
-<style>
-	#government-activity-container {
-		grid-template-columns: 1fr 1fr;
-	}
-
-	@media screen and (min-width: 900px) {
-		#government-activity-container {
-			display: grid;
-			column-gap: 15px;
-			grid-template-columns: 2fr 1fr;
-		}
-	}
-</style>
