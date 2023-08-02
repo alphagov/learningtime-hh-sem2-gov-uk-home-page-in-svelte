@@ -2,6 +2,11 @@
 	import SearchItemWrapper from './SearchItemWrapper.svelte';
 	import SectionHeading from '../../shared/SectionHeading.svelte';
 	import WidthContainer from '../../shared/WidthContainer.svelte';
+
+	/**
+	 * @type {any}
+	 */
+	 export let homepageData;
 </script>
 
 <section id="homepage-links-and-search-section">
@@ -9,14 +14,11 @@
 		<div id="links-and-search-container">
 			<div>
 				<SectionHeading title="Popular on GOV.UK" />
-				<a href="https://www.google.co.uk/">Get support with the cost of living</a>
-				<a href="https://www.google.co.uk/">Get support with the cost of living</a>
-				<a href="https://www.google.co.uk/"
-					>Find out about help you can get with your energy bills</a
-				>
-				<a href="https://www.google.co.uk/">Find a job</a>
-				<a href="https://www.google.co.uk/">Universal Credit account: sign in</a>
-				<a href="https://www.google.co.uk/">Check your National Insurance record</a>
+				<ul>
+					{#each homepageData as { content, web_url }}
+					<li><a href={web_url}>{content}</a></li>
+					{/each}
+				</ul>
 			</div>
 			<div>
 				<h3>Search</h3>

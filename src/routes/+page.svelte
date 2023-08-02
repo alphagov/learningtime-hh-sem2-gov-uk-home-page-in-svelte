@@ -6,11 +6,14 @@
 	import FeaturedServices from '$lib/components/home_page_sections/FeaturedServices/FeaturedServices.svelte';
 	import MoreServices from '$lib/components/home_page_sections/MoreServices/MoreServices.svelte';
 	import PromptContent from '$lib/components/home_page_sections/PromptContent/PromptContent.svelte';
+
+	export let data;
+
 </script>
 
 <main>
 	<HomepageHeader />
-	<HomepageLinksAndSearch />
+	<HomepageLinksAndSearch homepageData={data.homepage_links_and_search_links}/>
 	<ServicesAndInfo />
 	<GovernmentActivity />
 	<FeaturedServices />
