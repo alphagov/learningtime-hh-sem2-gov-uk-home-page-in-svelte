@@ -4,7 +4,8 @@
 
 <style>
 	div {
-		margin-right: 15px;
-		margin-left: 15px;
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 </style>
