@@ -177,6 +177,36 @@ export const jsonData = {
           "num_other_agencies": '400+'
         }
       }
+    },
+    "featured_services": {
+      "items": {
+        "services": [
+          {
+            "id": 234325,
+            "heading": "Cost of Living Payment",
+            "content": "Find out payment dates and how to report a payment is missing.",
+            "web_url": "https://www.gov.uk/guidance/cost-of-living-payment",
+            "img_src": "/src/lib/assets/cost-of-living-november-2022.jpg",
+            "alt": "Cost of Living Payment placeholder image"
+          },
+          {
+            "id": 425245,
+            "heading": "Carer's Allowance",
+            "content": "If you care for someone, check if you are eligible for Carer's Allowance",
+            "web_url": "https://www.gov.uk/carers-allowance",
+            "img_src": "/src/lib/assets/carers-allowance.jpg",
+            "alt": "Carer's Allowance placeholder image"
+          },
+          {
+            "id": 3507765,
+            "heading": "National Insurance",
+            "content": "Check your record to see if you can add more contributions",
+            "web_url": "https://www.gov.uk/check-national-insurance-record",
+            "img_src": "/src/lib/assets/check-your-contributions.jpg",
+            "alt": "National Insurance placeholder image"
+          },
+        ]
+      }
     }
   }
 }

@@ -16,7 +16,7 @@
 	<HomepageLinksAndSearch homepageLinksAndSearchData={data.data.homepage_links_and_search}/>
 	<ServicesAndInfo servicesAndInfoData={data.data.services_and_info}/>
 	<GovernmentActivity governmentActivityData={data.data.government_activity}/>
-	<FeaturedServices />
+	<FeaturedServices featuredServicesData={data.data.featured_services}/>
 	<MoreServices />
 	<PromptContent />
 </main>
