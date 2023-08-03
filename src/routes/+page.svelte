@@ -13,8 +13,8 @@
 
 <main>
 	<HomepageHeader />
-	<HomepageLinksAndSearch homepageData={data.homepage_links_and_search_links}/>
-	<ServicesAndInfo />
+	<HomepageLinksAndSearch homepageLinksAndSearchData={data.data.homepage_links_and_search}/>
+	<ServicesAndInfo servicesAndInfoData={data.data.services_and_info}/>
 	<GovernmentActivity />
 	<FeaturedServices />
 	<MoreServices />

@@ -6,7 +6,7 @@
 	/**
 	 * @type {any}
 	 */
-	 export let homepageData;
+	export let homepageLinksAndSearchData;
 </script>
 
 <section id="homepage-links-and-search-section">
@@ -15,7 +15,7 @@
 			<div>
 				<SectionHeading title="Popular on GOV.UK" />
 				<ul>
-					{#each homepageData as { content, web_url }}
+					{#each homepageLinksAndSearchData.items as { content, web_url }}
 					<li><a href={web_url}>{content}</a></li>
 					{/each}
 				</ul>

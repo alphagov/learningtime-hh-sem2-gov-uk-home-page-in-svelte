@@ -16,12 +16,12 @@
 					<p>Find out what the government is doing</p>
 				</div>
 				<ChevronCardContainer>
+					<!-- <ChevronCard />
 					<ChevronCard />
 					<ChevronCard />
 					<ChevronCard />
 					<ChevronCard />
-					<ChevronCard />
-					<ChevronCard />
+					<ChevronCard /> -->
 				</ChevronCardContainer>
 			</div>
 			<div id="government-activity-one-third">
