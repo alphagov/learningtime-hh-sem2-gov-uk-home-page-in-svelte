@@ -15,7 +15,7 @@
 	<HomepageHeader />
 	<HomepageLinksAndSearch homepageLinksAndSearchData={data.data.homepage_links_and_search}/>
 	<ServicesAndInfo servicesAndInfoData={data.data.services_and_info}/>
-	<GovernmentActivity />
+	<GovernmentActivity governmentActivityData={data.data.government_activity}/>
 	<FeaturedServices />
 	<MoreServices />
 	<PromptContent />

@@ -14,7 +14,7 @@
 	<WidthContainer>
 		<SectionHeading title="Topics" />
 		<ChevronCardContainer>
-			{#each servicesAndInfoData.items as chevronData}
+			{#each servicesAndInfoData.items.chevrons as chevronData}
 			<ChevronCard chevronData={chevronData}/>
 			{/each}
 		</ChevronCardContainer>
