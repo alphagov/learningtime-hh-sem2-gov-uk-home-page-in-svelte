@@ -1,4 +1,4 @@
-export const jsonData = {
+export const pageData = {
   "data": {
     "homepage_links_and_search": {
       "items": [

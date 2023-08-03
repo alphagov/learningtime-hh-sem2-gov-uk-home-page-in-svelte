@@ -8,7 +8,6 @@
 	import PromptContent from '$lib/components/home_page_sections/PromptContent/PromptContent.svelte';
 
 	export let data;
-
 </script>
 
 <main>
@@ -18,5 +17,5 @@
 	<GovernmentActivity governmentActivityData={data.data.government_activity}/>
 	<FeaturedServices featuredServicesData={data.data.featured_services}/>
 	<MoreServices moreServicesData={data.data.more_services}/>
-	<PromptContent />
+	<PromptContent/>
 </main>

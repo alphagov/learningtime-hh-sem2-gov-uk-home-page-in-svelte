@@ -1,5 +1,5 @@
-import { jsonData } from './data.js';
+import { pageData } from './pageData.js';
 
 export function load() {
-	return jsonData;
+	return pageData;
 }
