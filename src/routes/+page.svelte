@@ -17,6 +17,6 @@
 	<ServicesAndInfo servicesAndInfoData={data.data.services_and_info}/>
 	<GovernmentActivity governmentActivityData={data.data.government_activity}/>
 	<FeaturedServices featuredServicesData={data.data.featured_services}/>
-	<MoreServices />
+	<MoreServices moreServicesData={data.data.more_services}/>
 	<PromptContent />
 </main>
