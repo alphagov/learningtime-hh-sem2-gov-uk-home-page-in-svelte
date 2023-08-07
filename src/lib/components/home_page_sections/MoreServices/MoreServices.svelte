@@ -1,22 +1,20 @@
 <script>
 	import SectionHeading from '../../shared/SectionHeading.svelte';
 	import WidthContainer from '../../shared/WidthContainer.svelte';
+
+	/**
+	 * @type {{ items: { links: any; }; }}
+	 */
+	 export let moreServicesData;
 </script>
 
 <section id="featured-services-section">
 	<WidthContainer>
 		<SectionHeading title="More on GOV.UK" />
 		<ul id="more-services-list">
-			<li><a href="https://www.google.co.uk/">some list item with an anchor tag</a></li>
-			<li><a href="https://www.google.co.uk/">some list item with an anchor tag</a></li>
-			<li><a href="https://www.google.co.uk/">some list item with an anchor tag</a></li>
-			<li><a href="https://www.google.co.uk/">some list item with an anchor tag</a></li>
-			<li><a href="https://www.google.co.uk/">some list item with an anchor tag</a></li>
-			<li><a href="https://www.google.co.uk/">some list item with an anchor tag</a></li>
-			<li><a href="https://www.google.co.uk/">some list item with an anchor tag</a></li>
-			<li><a href="https://www.google.co.uk/">some list item with an anchor tag</a></li>
-			<li><a href="https://www.google.co.uk/">some list item with an anchor tag</a></li>
-			<li><a href="https://www.google.co.uk/">some list item with an anchor tag</a></li>
+			{#each moreServicesData.items.links as linksData}
+				<li><a href={linksData.web_url}>{linksData.content}</a></li>
+			{/each}
 		</ul>
 	</WidthContainer>
 </section>

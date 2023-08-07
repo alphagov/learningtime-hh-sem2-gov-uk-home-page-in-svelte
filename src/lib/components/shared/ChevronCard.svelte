@@ -1,8 +1,16 @@
+<script>
+
+	/**
+	 * @type {{ web_url: any; heading: any; content: any; }}
+	 */
+	export let chevronData;
+</script>
+
 <li>
 	<div>
 		<h3>
-			<a href="https://www.google.com/" class="chevron-card"> sample chevron card </a>
-			<p>Some content would be written here</p>
+			<a href={chevronData.web_url} class="chevron-card">{chevronData.heading}</a>
+			<p>{chevronData.content}</p>
 		</h3>
 	</div>
 </li>

@@ -1,12 +1,15 @@
-<script lang="ts">
-	export let imgSrc: string;
+<script>
+	/**
+	 * @type {any}
+	 */
+	export let servicesData;
 </script>
 
 <div id="outer">
-	<img src={imgSrc} alt="" />
+	<img src={servicesData.img_src} alt={servicesData.alt} />
 	<div id="inner">
-		<a href="https://www.google.com/" class="chevron-card"> sample chevron card </a>
-		<p>Some content would be written here</p>
+		<a href={servicesData.web_url} class="chevron-card">{servicesData.heading}</a>
+		<p>{servicesData.content}</p>
 	</div>
 </div>
 
@@ -14,11 +17,25 @@
 	#outer {
 		position: relative;
 		display: flex;
+		height: 100%;
+	}
+
+	#inner {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	a {
+		font-size: 24px;
+		font-weight: bold;
+		
 	}
 
 	img {
 		display: block;
-		margin: auto;
+		margin-right: auto;
 		width: 80%;
 		max-width: 150px;
 		height: auto;
@@ -31,9 +48,8 @@
 		}
 
 		img {
-			max-width: 250px;
+			max-width: 90%;
 		}
-
 	}
 
 	a::after {
@@ -45,4 +61,5 @@
 		right: 0px;
 		top: 0px;
 	}
+
 </style>
