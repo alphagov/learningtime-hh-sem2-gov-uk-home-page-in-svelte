@@ -18,6 +18,8 @@
 		position: relative;
 		display: flex;
 		height: 100%;
+		column-gap: 10px;
+		align-items: flex-start;
 	}
 
 	#inner {
@@ -27,29 +29,25 @@
 		justify-content: center;
 	}
 
+	p {
+		padding-top: 7.5px;
+	}
+
 	a {
-		font-size: 24px;
+		font-size: 18px;
 		font-weight: bold;
-		
+		text-decoration-thickness: 1px;
+		text-size-adjust: 100%;
+		text-underline-offset: 3.7872px;
 	}
 
 	img {
 		display: block;
 		margin-right: auto;
 		width: 80%;
-		max-width: 150px;
+		max-width: 220px;
 		height: auto;
-	}
-
-	@media screen and (min-width: 600px) {
-
-		#outer {
-			display: block;
-		}
-
-		img {
-			max-width: 90%;
-		}
+		margin-bottom: 10px;
 	}
 
 	a::after {
@@ -60,6 +58,21 @@
 		position: absolute;
 		right: 0px;
 		top: 0px;
+	}
+
+	@media screen and (min-width: 600px) {
+
+		#outer {
+			display: block;
+		}
+
+		a {
+			font-size: 24px;
+		}
+
+		img {
+			max-width: 90%;
+		}
 	}
 
 </style>
