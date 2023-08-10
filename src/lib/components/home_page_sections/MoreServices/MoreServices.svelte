@@ -5,10 +5,10 @@
 	/**
 	 * @type {{ items: { links: any; }; }}
 	 */
-	 export let moreServicesData;
+	export let moreServicesData;
 </script>
 
-<section id="featured-services-section">
+<section id="more-services-section">
 	<WidthContainer>
 		<SectionHeading title="More on GOV.UK" />
 		<ul id="more-services-list">
@@ -20,6 +20,16 @@
 </section>
 
 <style>
+
+	#more-services-section {
+		padding-top: 15px;
+		padding-bottom: 120px;
+	}
+
+	li {
+		margin-bottom: 20px;
+	}
+
 	ul {
 		column-count: 1;
 	}
