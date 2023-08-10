@@ -1,7 +1,7 @@
 <script>
 
 	/**
-	 * @type {{ web_url: any; heading: any; content: any; }}
+	 * @type {any}
 	 */
 	export let chevronData;
 </script>
@@ -25,6 +25,14 @@
 		font-weight: normal;
 	}
 
+	li {
+		border-top-color: var(--govuk-mid-grey);
+		border-top-style: solid;
+		border-top-width: 1px;
+		padding-top: 5px;
+		padding-bottom: 20px;
+	}
+
 	.chevron-card {
 		display: block;
 	}
@@ -42,7 +50,7 @@
 		border-top: 3px solid rgb(29, 112, 184);
 	}
 
-	/* this hack makes the whole card clickable, stoeln directly from gov.uk */
+	/* this hack makes the whole card clickable, stolen directly from gov.uk */
 	.chevron-card::after {
 		bottom: 0px;
 		content: '';

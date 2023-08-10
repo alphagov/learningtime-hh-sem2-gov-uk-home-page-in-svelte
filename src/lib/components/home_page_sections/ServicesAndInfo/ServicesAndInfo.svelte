@@ -20,3 +20,11 @@
 		</ChevronCardContainer>
 	</WidthContainer>
 </section>
+
+<style>
+
+	#services-and-info-section {
+		padding-top: 30px;
+	}
+
+</style>
