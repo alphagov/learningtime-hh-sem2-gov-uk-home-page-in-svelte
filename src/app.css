@@ -50,7 +50,6 @@
 }
 
 body {
-	background-color: rgb(195, 248, 248);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
@@ -62,6 +61,11 @@ section {
 
 li {
 	list-style-type: none;
+}
+
+hr {
+	border-color: black;
+	margin-top: 60px;
 }
 
 /* Mobile Styles (Default) */
