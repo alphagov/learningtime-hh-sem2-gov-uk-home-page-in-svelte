@@ -8,6 +8,7 @@
 
   h2 {
     font-size: 18px;
+    margin-bottom: 15px;
   }
 
   @media screen and (min-width: 600px) {

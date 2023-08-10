@@ -29,13 +29,44 @@
 				</ChevronCardContainer>
 			</div>
 			<div id="government-activity-one-third">
-				<div id="government-activity-header-container">
-					<SectionHeading title="Departments and organisations" />
-					<p>Find out what the government is doing</p>
+				<div>
+					<h2>Departments and organisations</h2>
 					<BigNumberContainer num={num_ministerial_depts} title="Ministerial Departments" />
 					<BigNumberContainer num={num_other_agencies} title="Other agencies and public bodies" />
 				</div>
 			</div>
 		</UnorderedListContainer>
+		<hr />
 	</WidthContainer>
 </section>
+
+<style>
+	#government-activity-two-thirds,
+	#government-activity-one-third {
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-top-color: var(--govuk_black);
+		padding-top: 15px;
+	}
+
+	#government-activity-header-container {
+		margin-bottom: 30px;
+	}
+
+	p {
+		margin-top: -15px;
+	}
+
+	h2 {
+		display: block;
+		font-size: 26px;
+	}
+
+	@media screen and (min-width: 900px) {
+		h2 {
+			display: inline-block;
+			width: 210px; /* Force line break on "and" in h2 to align BigNumberContainer, manually set width */
+			overflow-wrap: break-word;
+		}
+	}
+</style>

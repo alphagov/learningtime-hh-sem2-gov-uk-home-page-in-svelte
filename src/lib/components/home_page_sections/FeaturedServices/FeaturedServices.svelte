@@ -17,14 +17,22 @@
 				<FeaturedServicesCard {servicesData} />
 			{/each}
 		</div>
+		<hr>
 	</WidthContainer>
 </section>
 
 <style>
+
+	#featured-services-section {
+		padding-top: 15px;
+	}
+
 	#featured-services-container {
+		padding-top: 10px;
 		display: grid;
 		grid-template-columns: 1fr;
 		place-items: center;
+		margin-bottom: 20px;
 	}
 
 	@media screen and (min-width: 600px) {
