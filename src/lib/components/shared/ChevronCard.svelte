@@ -10,19 +10,24 @@
 	<div>
 		<h3>
 			<a href={chevronData.web_url} class="chevron-card">{chevronData.heading}</a>
-			<p>{chevronData.content}</p>
 		</h3>
+		<p>{chevronData.content}</p>
 	</div>
 </li>
 
 <style>
 	div {
-		padding: 10px 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 		position: relative;
 	}
 
 	p {
 		font-weight: normal;
+	}
+
+	h3 {
+		margin-bottom: 10px;
 	}
 
 	li {
@@ -41,7 +46,7 @@
 		content: '';
 		display: block;
 		height: 7px;
-		right: 0px;
+		right: 2px;
 		top: 16px;
 		position: absolute;
 		transform: translateY(0px) rotate(45deg) scale(1);
