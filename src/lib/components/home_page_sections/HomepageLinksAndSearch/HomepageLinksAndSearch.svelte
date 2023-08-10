@@ -31,6 +31,8 @@
 <style>
 	#homepage-links-and-search-section {
 		background-color: var(--govuk-light-grey);
+		padding-top: 30px;
+		padding-bottom: 50px;
 	}
 	#links-and-search-container {
 		display: flex;
@@ -44,6 +46,20 @@
 
 	a {
 		display: block;
+		font-weight: bold;
+	}
+
+	li {
+		margin-bottom: 15px;
+	}
+
+	li:last-child {
+		margin-bottom: 0px;
+	}
+
+	h3 {
+		font-size: 20px;
+		margin-bottom: 15px;
 	}
 
 	@media screen and (min-width: 600px) {

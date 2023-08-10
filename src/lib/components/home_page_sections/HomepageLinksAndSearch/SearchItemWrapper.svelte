@@ -4,6 +4,12 @@
 </div>
 
 <style>
+
+	input {
+		flex-grow: 1;
+		max-width: 340px;
+	}
+
 	#search-item-wrapper {
 		display: flex;
 	}
