@@ -5,14 +5,14 @@
 <div id="footer-meta">
 	<div id="footer-meta-text-container">
 		<ul id="footer-meta-list">
-			<li><a>Help</a></li>
-			<li><a>Privacy</a></li>
-			<li><a>Cookies</a></li>
-			<li><a>Accessibility statement</a></li>
-			<li><a>Contact</a></li>
-			<li><a>Terms and conditions</a></li>
-			<li><a>Rhestr o Wasanaethau Cymraeg</a></li>
-			<li><a> Government Digital Service</a></li>
+			<li><a href='https://www.gov.uk/help'>Help</a></li>
+			<li><a href='https://www.gov.uk/help/privacy-notice'>Privacy</a></li>
+			<li><a href='https://www.gov.uk/help/cookies'>Cookies</a></li>
+			<li><a href='https://www.gov.uk/help/accessibility-statement'>Accessibility statement</a></li>
+			<li><a href='https://www.gov.uk/contact'>Contact</a></li>
+			<li><a href='https://www.gov.uk/help/terms-conditions'>Terms and conditions</a></li>
+			<li><a href='https://www.gov.uk/cymraeg'>Rhestr o Wasanaethau Cymraeg</a></li>
+			<li><a href='https://www.gov.uk/government/organisations/government-digital-service'>Government Digital Service</a></li>
 		</ul>
 		<svg
 			aria-hidden="true"
@@ -50,13 +50,12 @@
 	#footer-meta {
 		display: flex;
 		flex-direction: column;
-	}
-
-	@media screen and (min-width: 600px) {
-		#footer-meta {
-			flex-direction: row;
-			flex-wrap: wrap;
-		}
+		padding-top: 50px;
+		margin-top: 50px;
+		border-top-style: solid;
+    border-top-color: var(--govuk-mid-grey);
+    border-top-width: 1px;
+		padding-bottom: 30px;
 	}
 
 	#footer-meta-text-container {
@@ -66,10 +65,18 @@
 		justify-content: center;
 	}
 
+	#footer-meta-list {
+		margin-bottom: 10px;
+	}
+
 	#footer-meta-list li {
 		display: inline-block;
 		margin-right: 15px;
 		margin-bottom: 5px;
+	}
+
+	a {
+		font-size: 16px;
 	}
 
 	img {
@@ -81,6 +88,13 @@
 		flex-direction: column;
 		flex-grow: 1;
 		align-items: center;
+	}
+
+	@media screen and (min-width: 600px) {
+		#footer-meta {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
 	}
 
 </style>

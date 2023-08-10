@@ -36,11 +36,32 @@
 
 <style>
 	footer {
+		border-top: 10px solid var(--govuk-blue);
 		background-color: var(--govuk-light-grey);
+		padding-top: 40px;
 	}
 
 	#government-activity-list {
 		column-count: 1;
+		padding-top: 20px;
+		border-top-style: solid;
+    border-top-color: var(--govuk-mid-grey);
+    border-top-width: 1px;
+	}
+
+	#topics-list {
+		padding-top: 20px;
+		border-top-style: solid;
+    border-top-color: var(--govuk-mid-grey);
+    border-top-width: 1px;
+	}
+
+	li {
+		margin-bottom: 20px;
+	}
+
+	a {
+		font-size: 16px;
 	}
 
 	@media screen and (min-width: 600px) {
