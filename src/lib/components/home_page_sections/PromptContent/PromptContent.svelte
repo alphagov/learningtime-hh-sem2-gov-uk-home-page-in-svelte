@@ -16,12 +16,27 @@
 				<button>Report a problem with this page</button>
 			</div>
 		</div>
-		<br />
-		<br />
 	</WidthContainer>
 </section>
 
 <style>
+
+	#prompt-content-container {
+		background-color: var(--govuk-light-grey);
+		padding-left: 15px;
+		padding-right: 15px;
+		border-top-style: solid;
+		border-top-color: var(--govuk-mid-grey);
+		border-top-width: 1px;
+	}
+
+	#prompt-question, #prompt-problem {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+
 	ul {
 		display: flex;
 		gap: 8px;
