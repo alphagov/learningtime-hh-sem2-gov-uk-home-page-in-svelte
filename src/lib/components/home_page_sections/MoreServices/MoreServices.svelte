@@ -13,7 +13,7 @@
 		<SectionHeading title="More on GOV.UK" />
 		<ul id="more-services-list">
 			{#each moreServicesData.items.links as linksData}
-				<li><a href={linksData.web_url}>{linksData.content}</a></li>
+				<li><a class="link-effects link--medium" href={linksData.web_url}>{linksData.content}</a></li>
 			{/each}
 		</ul>
 	</WidthContainer>
