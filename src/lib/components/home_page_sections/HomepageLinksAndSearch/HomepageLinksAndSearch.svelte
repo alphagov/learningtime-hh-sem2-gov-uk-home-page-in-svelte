@@ -9,14 +9,14 @@
 	export let homepageLinksAndSearchData;
 </script>
 
-<section id="homepage-links-and-search-section">
+<section class="homepage-links-and-search">
 	<WidthContainer>
-		<div id="links-and-search-container">
-			<div>
+		<div class="homepage-links-and-search__wrapper">
+			<div class="homepage-links-and-search__content">
 				<SectionHeading title="Popular on GOV.UK" />
-				<ul>
+				<ul class="homepage-links-and-search-list">
 					{#each homepageLinksAndSearchData.items as { content, web_url }}
-					<li><a class="link-effects link--medium link--bold" href={web_url}>{content}</a></li>
+					<li class="homepage-links-and-search-list__item"><a class="link-effects link--medium link--bold" href={web_url}>{content}</a></li>
 					{/each}
 				</ul>
 			</div>
@@ -29,27 +29,23 @@
 </section>
 
 <style>
-	#homepage-links-and-search-section {
+	.homepage-links-and-search {
 		background-color: var(--govuk-light-grey);
 		padding-top: 30px;
 		padding-bottom: 50px;
 	}
-	#links-and-search-container {
+	.homepage-links-and-search__wrapper {
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
 	}
 
-	#links-and-search-container > div {
+	.homepage-links-and-search__wrapper div {
 		flex: 1;
 	}
 
-	li {
+	.homepage-links-and-search-list__item:not(:last-child) {
 		margin-bottom: 15px;
-	}
-
-	li:last-child {
-		margin-bottom: 0px;
 	}
 
 	h3 {
@@ -58,7 +54,7 @@
 	}
 
 	@media screen and (min-width: 600px) {
-		#links-and-search-container {
+		.homepage-links-and-search__wrapper {
 			flex-direction: row;
 		}
 	}
