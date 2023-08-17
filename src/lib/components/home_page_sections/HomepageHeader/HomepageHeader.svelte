@@ -2,31 +2,31 @@
 	import WidthContainer from '../../shared/WidthContainer.svelte';
 </script>
 
-<header>
+<header class="homepage-header">
 	<WidthContainer>
-		<h1>Welcome to GOV.UK</h1>
-		<p>The best place to find government service and information</p>
-		<p><span>Simpler, clearer, faster</span></p>
+		<h1 class="homepage-header__heading">Welcome to GOV.UK</h1>
+		<p class="homepage-header__intro">The best place to find government service and information</p>
+		<p class="homepage-header__intro--bold">Simpler, clearer, faster</p>
 	</WidthContainer>
 </header>
 
 <style>
-	header {
+	.homepage-header {
 		color: var(--govuk-white);
 		background-color: var(--govuk-blue);
 		padding-top: 60px;
 		padding-bottom: 50px;
 	}
 
-	p {
+	.homepage-header__heading {
+		padding-bottom: 30px;
+	}
+
+	.homepage-header__intro {
 		padding-bottom: 10px;
 	}
 
-	p span {
+	.homepage-header__intro--bold {
 		font-weight: bold;
-	}
-
-	h1 {
-		padding-bottom: 30px;
 	}
 </style>
