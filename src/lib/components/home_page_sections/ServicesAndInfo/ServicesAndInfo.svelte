@@ -10,7 +10,7 @@
 	 export let servicesAndInfoData;
 </script>
 
-<section id="services-and-info-section">
+<section class="services-and-info">
 	<WidthContainer>
 		<SectionHeading title="Topics" />
 		<ChevronCardContainer>
@@ -23,7 +23,7 @@
 
 <style>
 
-	#services-and-info-section {
+	.services-and-info {
 		padding-top: 30px;
 	}
 
