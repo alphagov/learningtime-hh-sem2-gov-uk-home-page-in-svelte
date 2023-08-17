@@ -16,7 +16,7 @@
 				<SectionHeading title="Popular on GOV.UK" />
 				<ul>
 					{#each homepageLinksAndSearchData.items as { content, web_url }}
-					<li><a href={web_url}>{content}</a></li>
+					<li><a class="link-effects link--medium link--bold" href={web_url}>{content}</a></li>
 					{/each}
 				</ul>
 			</div>
@@ -42,11 +42,6 @@
 
 	#links-and-search-container > div {
 		flex: 1;
-	}
-
-	a {
-		display: block;
-		font-weight: bold;
 	}
 
 	li {

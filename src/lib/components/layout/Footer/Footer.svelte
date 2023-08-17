@@ -17,7 +17,9 @@
 				<SectionHeading title="Topics" />
 				<ul id="topics-list">
 					{#each footerData.topics.items.links as linksData}
-						<li><a href={linksData.web_url}>{linksData.heading}</a></li>
+						<li>
+							<a class="footer__link link-effects link--small" href={linksData.web_url}>{linksData.heading}</a>
+						</li>
 					{/each}
 				</ul>
 			</div>
@@ -25,8 +27,10 @@
 				<SectionHeading title="Government Activity" />
 				<ul id="government-activity-list">
 					{#each footerData.government_activity.items.links as linksData}
-					<li><a href={linksData.web_url}>{linksData.heading}</a></li>
-				{/each}
+						<li>
+							<a class="footer__link link-effects link--small" href={linksData.web_url}>{linksData.heading}</a>
+						</li>
+					{/each}
 				</ul>
 			</div>
 		</UnorderedListContainer>
@@ -39,6 +43,10 @@
 		border-top: 10px solid var(--govuk-blue);
 		background-color: var(--govuk-light-grey);
 		padding-top: 40px;
+	}
+
+	.footer__link:visited {
+		color: var(--govuk--black);
 	}
 
 	#government-activity-list {
@@ -58,10 +66,6 @@
 
 	li {
 		margin-bottom: 20px;
-	}
-
-	a {
-		font-size: 16px;
 	}
 
 	@media screen and (min-width: 600px) {

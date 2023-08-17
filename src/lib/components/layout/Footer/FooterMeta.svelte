@@ -5,14 +5,37 @@
 <div id="footer-meta">
 	<div id="footer-meta-text-container">
 		<ul id="footer-meta-list">
-			<li><a href='https://www.gov.uk/help'>Help</a></li>
-			<li><a href='https://www.gov.uk/help/privacy-notice'>Privacy</a></li>
-			<li><a href='https://www.gov.uk/help/cookies'>Cookies</a></li>
-			<li><a href='https://www.gov.uk/help/accessibility-statement'>Accessibility statement</a></li>
-			<li><a href='https://www.gov.uk/contact'>Contact</a></li>
-			<li><a href='https://www.gov.uk/help/terms-conditions'>Terms and conditions</a></li>
-			<li><a href='https://www.gov.uk/cymraeg'>Rhestr o Wasanaethau Cymraeg</a></li>
-			<li><a href='https://www.gov.uk/government/organisations/government-digital-service'>Government Digital Service</a></li>
+			<li><a class="footer__link link-effects link--small" href="https://www.gov.uk/help">Help</a></li>
+			<li>
+				<a class="footer__link link-effects link--small" href="https://www.gov.uk/help/privacy-notice">Privacy</a
+				>
+			</li>
+			<li>
+				<a class="footer__link link-effects link--small" href="https://www.gov.uk/help/cookies">Cookies</a>
+			</li>
+			<li>
+				<a class="footer__link link-effects link--small" href="https://www.gov.uk/help/accessibility-statement"
+					>Accessibility statement</a
+				>
+			</li>
+			<li><a class="footer__link link-effects link--small" href="https://www.gov.uk/contact">Contact</a></li>
+			<li>
+				<a class="footer__link link-effects link--small" href="https://www.gov.uk/help/terms-conditions"
+					>Terms and conditions</a
+				>
+			</li>
+			<li>
+				<a class="footer__link link-effects link--small" href="https://www.gov.uk/cymraeg"
+					>Rhestr o Wasanaethau Cymraeg</a
+				>
+			</li>
+			<li>
+				<a
+					class="footer__link link-effects link--small"
+					href="https://www.gov.uk/government/organisations/government-digital-service"
+					>Government Digital Service</a
+				>
+			</li>
 		</ul>
 		<svg
 			aria-hidden="true"
@@ -30,6 +53,7 @@
 		</svg>
 		<span id="footer-meta-license-description">
 			All content is available under the <a
+				class="footer__link link-effects link--small"
 				href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
 				>Open Government Licence v3.0</a
 			>, except where otherwise stated</span
@@ -38,6 +62,7 @@
 	<div id="footer-meta-img-container">
 		<img src={govCrest} alt="gov crest" />
 		<a
+			class="footer__link link-effects link--small"
 			href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
 			target="_blank"
 		>
@@ -47,6 +72,11 @@
 </div>
 
 <style>
+
+	.footer__link:visited {
+		color: var(--govuk--black);
+	}
+
 	#footer-meta {
 		display: flex;
 		flex-direction: column;
@@ -73,10 +103,6 @@
 		display: inline-block;
 		margin-right: 15px;
 		margin-bottom: 5px;
-	}
-
-	a {
-		font-size: 16px;
 	}
 
 	img {

@@ -8,7 +8,7 @@
 <div id="outer">
 	<img src={servicesData.img_src} alt={servicesData.alt} />
 	<div id="inner">
-		<a href={servicesData.web_url} class="chevron-card">{servicesData.heading}</a>
+		<a class="featured-services-card__link link-effects link--large link--bold" href={servicesData.web_url} >{servicesData.heading}</a>
 		<p>{servicesData.content}</p>
 	</div>
 </div>
@@ -29,16 +29,29 @@
 		justify-content: center;
 	}
 
-	p {
-		padding-top: 7.5px;
-	}
-
-	a {
-		font-size: 18px;
-		font-weight: bold;
+	.featured-services-card__link {
 		text-decoration-thickness: 1px;
 		text-size-adjust: 100%;
-		text-underline-offset: 3.7872px;
+		text-underline-offset: 5px;
+		width: fit-content;
+	}
+
+	.featured-services-card__link:hover {
+		text-decoration-thickness: 3px;
+	}
+
+	.featured-services-card__link::after {
+		bottom: 0px;
+		content: '';
+		display: block;
+		left: 0px;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+	}
+
+	p {
+		padding-top: 7.5px;
 	}
 
 	img {
@@ -50,24 +63,10 @@
 		margin-bottom: 10px;
 	}
 
-	a::after {
-		bottom: 0px;
-		content: '';
-		display: block;
-		left: 0px;
-		position: absolute;
-		right: 0px;
-		top: 0px;
-	}
-
 	@media screen and (min-width: 600px) {
 
 		#outer {
 			display: block;
-		}
-
-		a {
-			font-size: 24px;
 		}
 
 		img {

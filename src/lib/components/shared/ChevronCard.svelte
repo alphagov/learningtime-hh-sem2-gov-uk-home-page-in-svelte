@@ -6,10 +6,10 @@
 	export let chevronData;
 </script>
 
-<li>
+<li class="chevron-card">
 	<div>
 		<h3>
-			<a href={chevronData.web_url} class="chevron-card">{chevronData.heading}</a>
+			<a class="chevron-card__link link-effects link--medium link--bold" href={chevronData.web_url}>{chevronData.heading}</a>
 		</h3>
 		<p>{chevronData.content}</p>
 	</div>
@@ -38,11 +38,7 @@
 		padding-bottom: 20px;
 	}
 
-	.chevron-card {
-		display: block;
-	}
-
-	.chevron-card::before {
+	.chevron-card__link::before {
 		content: '';
 		display: block;
 		height: 7px;
@@ -56,7 +52,7 @@
 	}
 
 	/* this hack makes the whole card clickable, stolen directly from gov.uk */
-	.chevron-card::after {
+	.chevron-card__link::after {
 		bottom: 0px;
 		content: '';
 		display: block;
