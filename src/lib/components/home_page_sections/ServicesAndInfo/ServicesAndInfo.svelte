@@ -1,6 +1,6 @@
 <script>
 	import WidthContainer from '../../shared/WidthContainer.svelte';
-	import ChevronCard from '../../shared/ChevronCard.svelte';
+	import ChevronCardItem from '../../shared/ChevronCardItem.svelte';
 	import SectionHeading from '../../shared/SectionHeading.svelte';
 	import ChevronCardList from '../../shared/ChevronCardList.svelte';
 
@@ -15,7 +15,7 @@
 		<SectionHeading title="Topics" />
 		<ChevronCardList>
 			{#each servicesAndInfoData.items.chevrons as chevronData}
-			<ChevronCard chevronData={chevronData}/>
+			<ChevronCardItem chevronData={chevronData}/>
 			{/each}
 		</ChevronCardList>
 	</WidthContainer>

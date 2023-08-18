@@ -1,6 +1,6 @@
 <script>
 	import BigNumberContainer from './BigNumberContainer.svelte';
-	import ChevronCard from '../../shared/ChevronCard.svelte';
+	import ChevronCardItem from '../../shared/ChevronCardItem.svelte';
 	import ChevronCardList from '../../shared/ChevronCardList.svelte';
 	import SectionHeading from '../../shared/SectionHeading.svelte';
 	import WidthContainer from '../../shared/WidthContainer.svelte';
@@ -24,7 +24,7 @@
 				</div>
 				<ChevronCardList>
 					{#each governmentActivityData.items.chevrons as chevronData}
-						<ChevronCard {chevronData} />
+						<ChevronCardItem {chevronData} />
 					{/each}
 				</ChevronCardList>
 			</div>
