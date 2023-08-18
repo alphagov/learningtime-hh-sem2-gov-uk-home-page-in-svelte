@@ -1,7 +1,7 @@
 <script>
 	import BigNumberContainer from './BigNumberContainer.svelte';
 	import ChevronCard from '../../shared/ChevronCard.svelte';
-	import ChevronCardContainer from '../../shared/ChevronCardContainer.svelte';
+	import ChevronCardList from '../../shared/ChevronCardList.svelte';
 	import SectionHeading from '../../shared/SectionHeading.svelte';
 	import WidthContainer from '../../shared/WidthContainer.svelte';
 	import UnorderedListContainer from '$lib/components/shared/UnorderedListContainer.svelte';
@@ -22,11 +22,11 @@
 					<SectionHeading title="Government Activity" />
 					<p>Find out what the government is doing</p>
 				</div>
-				<ChevronCardContainer>
+				<ChevronCardList>
 					{#each governmentActivityData.items.chevrons as chevronData}
 						<ChevronCard {chevronData} />
 					{/each}
-				</ChevronCardContainer>
+				</ChevronCardList>
 			</div>
 			<div id="government-activity-one-third">
 				<div>

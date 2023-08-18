@@ -2,7 +2,7 @@
 	import WidthContainer from '../../shared/WidthContainer.svelte';
 	import ChevronCard from '../../shared/ChevronCard.svelte';
 	import SectionHeading from '../../shared/SectionHeading.svelte';
-	import ChevronCardContainer from '../../shared/ChevronCardContainer.svelte';
+	import ChevronCardList from '../../shared/ChevronCardList.svelte';
 
 	/**
 	 * @type {{ items: any; }}
@@ -13,11 +13,11 @@
 <section class="services-and-info">
 	<WidthContainer>
 		<SectionHeading title="Topics" />
-		<ChevronCardContainer>
+		<ChevronCardList>
 			{#each servicesAndInfoData.items.chevrons as chevronData}
 			<ChevronCard chevronData={chevronData}/>
 			{/each}
-		</ChevronCardContainer>
+		</ChevronCardList>
 	</WidthContainer>
 </section>
 

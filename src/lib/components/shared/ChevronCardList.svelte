@@ -1,11 +1,9 @@
-<div id="chevron-card-container">
-	<ul id="chevron-card-ul">
-		<slot />
-	</ul>
-</div>
+<ul class="chevron-card-list">
+	<slot />
+</ul>
 
 <style>
-	#chevron-card-ul {
+	.chevron-card-list {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 		gap: 15px;
