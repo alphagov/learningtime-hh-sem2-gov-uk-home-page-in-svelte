@@ -2,28 +2,28 @@
 	import WidthContainer from '../shared/WidthContainer.svelte';
 </script>
 
-<nav>
+<nav class="navbar">
 	<WidthContainer>
-		<div>
-			<h2>GOV.UK</h2>
-			<p>Menu Component</p>
-			<div>Search div</div>
+		<div class="navbar__content">
+			<h2 class="navbar__heading">GOV.UK</h2>
+			<p class="navbar__menu">Menu Component</p>
+			<div class=navbar__search>Search div</div>
 		</div>
 	</WidthContainer>
 </nav>
 
 <style>
-	nav {
+	.navbar {
 		background-color: black;
 	}
 
-	div {
+	.navbar__content {
 		display: flex;
 		justify-content: space-between;
 		color: white;
 	}
 
-	nav :nth-child(2) {
+	.navbar__menu {
 		margin-left: auto;
 	}
 </style>

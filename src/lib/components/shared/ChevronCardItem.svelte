@@ -1,36 +1,21 @@
 <script>
-
 	/**
 	 * @type {any}
 	 */
 	export let chevronData;
 </script>
 
-<li class="chevron-card">
-	<div>
-		<h3>
-			<a class="chevron-card__link link-effects link--medium link--bold" href={chevronData.web_url}>{chevronData.heading}</a>
+<li class="chevron-card-list__item">
+	<div class="chevron-card-list__item-content">
+		<h3 class="chevron-card-list__item-heading">
+			<a class="chevron-card-list__item-link link-effects link--medium link--bold" href={chevronData.web_url}>{chevronData.heading}</a>
 		</h3>
-		<p>{chevronData.content}</p>
+		<p class="chevron-card-list__item-text">{chevronData.content}</p>
 	</div>
 </li>
 
 <style>
-	div {
-		padding-top: 10px;
-		padding-bottom: 10px;
-		position: relative;
-	}
-
-	p {
-		font-weight: normal;
-	}
-
-	h3 {
-		margin-bottom: 10px;
-	}
-
-	li {
+	.chevron-card-list__item {
 		border-top-color: var(--govuk-mid-grey);
 		border-top-style: solid;
 		border-top-width: 1px;
@@ -38,7 +23,17 @@
 		padding-bottom: 20px;
 	}
 
-	.chevron-card__link::before {
+	.chevron-card-list__item-content {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		position: relative;
+	}
+
+	.chevron-card-list__item-heading {
+		margin-bottom: 10px;
+	}
+
+	.chevron-card-list__item-link:before {
 		content: '';
 		display: block;
 		height: 7px;
@@ -52,7 +47,7 @@
 	}
 
 	/* this hack makes the whole card clickable, stolen directly from gov.uk */
-	.chevron-card__link::after {
+	.chevron-card-list__item-link:after {
 		bottom: 0px;
 		content: '';
 		display: block;

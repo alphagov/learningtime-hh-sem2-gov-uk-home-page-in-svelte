@@ -1,8 +1,8 @@
 <script>
 	import WidthContainer from '../../shared/WidthContainer.svelte';
-	import ChevronCard from '../../shared/ChevronCard.svelte';
+	import ChevronCardItem from '../../shared/ChevronCardItem.svelte';
 	import SectionHeading from '../../shared/SectionHeading.svelte';
-	import ChevronCardContainer from '../../shared/ChevronCardContainer.svelte';
+	import ChevronCardList from '../../shared/ChevronCardList.svelte';
 
 	/**
 	 * @type {{ items: any; }}
@@ -10,20 +10,20 @@
 	 export let servicesAndInfoData;
 </script>
 
-<section id="services-and-info-section">
+<section class="services-and-info">
 	<WidthContainer>
 		<SectionHeading title="Topics" />
-		<ChevronCardContainer>
+		<ChevronCardList>
 			{#each servicesAndInfoData.items.chevrons as chevronData}
-			<ChevronCard chevronData={chevronData}/>
+			<ChevronCardItem chevronData={chevronData}/>
 			{/each}
-		</ChevronCardContainer>
+		</ChevronCardList>
 	</WidthContainer>
 </section>
 
 <style>
 
-	#services-and-info-section {
+	.services-and-info {
 		padding-top: 30px;
 	}
 

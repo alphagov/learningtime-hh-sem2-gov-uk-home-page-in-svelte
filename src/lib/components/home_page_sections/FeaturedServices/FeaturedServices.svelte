@@ -9,10 +9,10 @@
 	 export let featuredServicesData;
 </script>
 
-<section id="featured-services-section">
+<section class="featured-services">
 	<WidthContainer>
 		<SectionHeading title="Featured" />
-		<div id="featured-services-container">
+		<div class="featured-services-wrapper">
 			{#each featuredServicesData.items.services as servicesData}
 				<FeaturedServicesCard {servicesData} />
 			{/each}
@@ -23,11 +23,11 @@
 
 <style>
 
-	#featured-services-section {
+	.featured-services {
 		padding-top: 15px;
 	}
 
-	#featured-services-container {
+	.featured-services-wrapper {
 		padding-top: 10px;
 		display: grid;
 		grid-template-columns: 1fr;
@@ -36,7 +36,7 @@
 	}
 
 	@media screen and (min-width: 600px) {
-		#featured-services-container {
+		.featured-services-wrapper {
 			display: grid;
 			column-gap: 15px;
 			grid-template-columns: 1fr 1fr 1fr;

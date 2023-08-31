@@ -7,28 +7,32 @@
 	/**
 	 * @type {any}
 	 */
-	 export let footerData;
+	export let footerData;
 </script>
 
 <footer>
 	<WidthContainer>
 		<UnorderedListContainer>
-			<div id="government-topics-two-thirds">
+			<div class="footer__two-thirds-wrapper">
 				<SectionHeading title="Topics" />
-				<ul id="topics-list">
+				<ul class="footer__list footer__list-topics">
 					{#each footerData.topics.items.links as linksData}
-						<li>
-							<a class="footer__link link-effects link--small" href={linksData.web_url}>{linksData.heading}</a>
+						<li class="footer__list__item">
+							<a class="footer__link link-effects link--small" href={linksData.web_url}
+								>{linksData.heading}</a
+							>
 						</li>
 					{/each}
 				</ul>
 			</div>
-			<div id="government-activity-one-third">
+			<div class="footer__one-third-wrapper">
 				<SectionHeading title="Government Activity" />
-				<ul id="government-activity-list">
+				<ul class="footer__list footer__list-activity">
 					{#each footerData.government_activity.items.links as linksData}
-						<li>
-							<a class="footer__link link-effects link--small" href={linksData.web_url}>{linksData.heading}</a>
+						<li class="footer__list__item">
+							<a class="footer__link link-effects link--small" href={linksData.web_url}
+								>{linksData.heading}</a
+							>
 						</li>
 					{/each}
 				</ul>
@@ -45,35 +49,24 @@
 		padding-top: 40px;
 	}
 
+	.footer__list {
+		padding-top: 20px;
+		border-top-style: solid;
+		border-top-color: var(--govuk-mid-grey);
+		border-top-width: 1px;
+	}
+
+	.footer__list__item {
+		margin-bottom: 20px;
+	}
+
 	.footer__link:visited {
 		color: var(--govuk--black);
 	}
 
-	#government-activity-list {
-		column-count: 1;
-		padding-top: 20px;
-		border-top-style: solid;
-    border-top-color: var(--govuk-mid-grey);
-    border-top-width: 1px;
-	}
-
-	#topics-list {
-		padding-top: 20px;
-		border-top-style: solid;
-    border-top-color: var(--govuk-mid-grey);
-    border-top-width: 1px;
-	}
-
-	li {
-		margin-bottom: 20px;
-	}
-
 	@media screen and (min-width: 600px) {
-		ul {
-			/* width: 66.66%; */
-			column-width: auto;
+		.footer__list-topics {
 			column-count: 2;
-			column-gap: 15px;
 		}
 	}
 </style>

@@ -8,34 +8,35 @@
 	export let moreServicesData;
 </script>
 
-<section id="more-services-section">
+<section class="more-services">
 	<WidthContainer>
 		<SectionHeading title="More on GOV.UK" />
-		<ul id="more-services-list">
+		<ul class="more-services__list">
 			{#each moreServicesData.items.links as linksData}
-				<li><a class="link-effects link--medium" href={linksData.web_url}>{linksData.content}</a></li>
+				<li class="more-services__list-item">
+					<a class="link-effects link--medium" href={linksData.web_url}>{linksData.content}</a>
+				</li>
 			{/each}
 		</ul>
 	</WidthContainer>
 </section>
 
 <style>
-
-	#more-services-section {
+	.more-services {
 		padding-top: 15px;
 		padding-bottom: 120px;
 	}
 
-	li {
-		margin-bottom: 20px;
-	}
-
-	ul {
+	.more-services__list {
 		column-count: 1;
 	}
 
+	.more-services__list-item {
+		margin-bottom: 20px;
+	}
+
 	@media screen and (min-width: 600px) {
-		ul {
+		.more-services__list {
 			width: 66.66%;
 			column-width: auto;
 			column-count: 2;

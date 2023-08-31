@@ -1,9 +1,9 @@
-<div>
+<div class="width-container">
 	<slot />
 </div>
 
 <style>
-	div {
+	.width-container {
 		max-width: 1200px;
 		margin-left: auto;
 		margin-right: auto;
